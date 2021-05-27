@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <char></char>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Google</title>
 </head>
 <style>
@@ -23,6 +23,12 @@
         display: block;
         text-align: center;       
     }
+    #mic {
+        height: 20px;
+        position: absolute;
+        margin-top: 13px;
+        margin-left: 200px;
+    }
     #button1 {
         display: inline;
         margin-top: 30px;
@@ -43,7 +49,7 @@
         font-size: 14px;
     }    
     #search-form:hover {
-        box-shadow: 3px 2px 3px;
+        box-shadow: 2px 2px 2px;
     }
     #button1:hover {
         border: 1px solid rgba(138, 135, 135, 0.6);
@@ -59,6 +65,7 @@
     <div>
         <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">  
         <form>
+            <img id="mic" src="mic.png">
             <input id="search-form" type="text" name="search">
             <button id="button1" type="submit">Google Search</button>
             <button id="button2" type="submit">I'm Feeling Lucky</button>
