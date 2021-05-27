@@ -59,7 +59,15 @@
         border-radius: 50px;
         border: 1px solid rgb(212, 211, 211);
     }
+    #search-icon {
+        height: 22px;
+        position: absolute;
+        top: 288px;
+        z-index: 2;
+        left: 380px;
+    }
     #mic {
+        height: 20px;
         position: absolute;
         top: 288px;
         left: 810px;
@@ -101,9 +109,6 @@
     .right2:hover {
         text-decoration: underline;
     }
-    #mic {
-        height: 20px;
-    }
 </style>
 <body>
     <header>
@@ -119,7 +124,7 @@
     <div id="search1">
         <img id="logo" src="logo.png" alt="Google Logo">
         <form id="form"> 
-            <input type="text" id="search" name="search"><img id="mic" src="mic.png">
+            <img id="search-icon" src="search.png"><input type="text" id="search" name="search"><img id="mic" src="mic.png">
         </form>
     </div>
     <div id="search2">      
