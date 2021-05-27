@@ -7,17 +7,32 @@
     :root {
         -webkit-appearance: none;
     }
+    nav {
+     justify-content: center;
+    }
+    .left1 {
+        border: solid;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    .right1 {
+        float: right;
+        border: solid;
+    }
     #search1 {
         display: block;
         margin: auto;
         text-align: center;
-        margin-top: 120px;
+        margin-top: 100px;
     }
     #search2 {
         display: block;
         margin: auto;
         text-align: center;
-        margin-top: 25px;
+        margin-top: 20px;
     }
     #logo {
         width: 280px;
@@ -28,17 +43,28 @@
         border-radius: 50px;
         border: 1px solid rgb(212, 211, 211);
     }
+    #me {
+        height: 50px;
+    }
     .button {
+        margin: 4px;
         padding: 10px 18px;
-        margin: 5px;
         border: none;
-        background-color: rgb(241, 240, 240)
+    }
+    .button:hover {
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 3px;
     }
 </style>
 <body>
     <header>
         <nav>
-
+            <a class="left1" href="About">About</a>
+            <a class="left1" href="Store">Store</a>
+            <a class="right1" href="Gmail">Gmail</a>
+            <a class="right1" href="Images">Images</a>
+            <a class="right1" href="Apps"><img src="apps.png"></a>
+            <a class="right1" href="Profile"><img id="me" src="me.png"></a>
         </nav>
     </header>
     <div id="search1">
@@ -47,9 +73,9 @@
             <input type="text" id="search" name="search">
         </form>
     </div>
-    <div id="search2">           
-        <button class="button">Google Search</button>
-        <button class="button">I'm Feeling Lucky</button>
+    <div id="search2">      
+        <button class="button" type="button">Google Search</button>
+        <button class="button" type="button">I'm Feeling Lucky</button>
     </div>
 </body>    
 </html>
