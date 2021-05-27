@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.css">
     <title>Google</title>
 </head>
+<style>
+    :root {
+        -webkit-appearance: none;
+    }
+    #search1 {
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 120px;
+    }
+    #search2 {
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 25px;
+    }
+    #logo {
+        width: 280px;
+    }
+    #search {
+        width: 460px;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid rgb(212, 211, 211);
+    }
+    .button {
+        padding: 10px 18px;
+        margin: 5px;
+        border: none;
+        background-color: rgb(241, 240, 240)
+    }
+</style>
 <body>
-    <div>
-        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">  
-        <form>
-            <img id="mic" src="mic.png">
-            <input id="search-form" type="text" name="search">
-            <button id="button1" type="submit">Google Search</button>
-            <button id="button2" type="submit">I'm Feeling Lucky</button>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <div id="search1">
+        <img id="logo" src="logo.png" alt="Google Logo">
+        <form id="form"> 
+            <input type="text" id="search" name="search">
         </form>
-    </div>    
-</body>
+    </div>
+    <div id="search2">           
+        <button class="button">Google Search</button>
+        <button class="button">I'm Feeling Lucky</button>
+    </div>
+</body>    
+</html>
