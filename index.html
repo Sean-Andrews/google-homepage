@@ -1,158 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Google</title>
 </head>
-<style>
-    :root {
-        -webkit-appearance: none;
-    }
-    html {
-        height: 100%;
-        width: 100%;
-    }
-    #navbar {
-        display: grid;
-        grid-template-columns: 50px auto 60px 60px 40px 60px;
-        height: 60px;
-        align-items: center;
-    }
-    .left1 {
-        text-decoration: none;
-        color: black;
-        font-size: 15px;
-        align-self: center;
-        margin: 15px;
-    }
-    .left1:hover {
-        text-decoration: underline;
-    }
-    .text1:hover {
-        text-decoration: underline;
-    }
-    .right1 {
-        text-decoration: none;
-        color: black;
-        font-size: 15px;
-        align-self: center;
-    }
-    #main {
-        display: block;
-        margin: auto;
-        text-align: center;
-        margin-top: 50px;
-    }
-    #main-buttons {
-        display: block;
-        margin: auto;
-        text-align: center;
-        margin-top: 25px;
-        margin-bottom: 330px;
-    }
-    #logo {
-        width: 280px;
-    }
-
-    #form {
-        width: 470px;
-        margin: auto;
-    }
-    #search {
-        position: relative;
-        width: 420px;
-        height: 45px;
-        border-radius: 50px;
-        border: 1px solid rgb(212, 211, 211);
-        padding-left: 50px;
-    }
-    #search:hover {
-        box-shadow: 0 0 5px rgb(196, 195, 195);
-    }
-    #search:focus {
-        outline: none;
-        box-shadow: 0 0 5px rgb(196, 195, 195));
-    }
-    #search-icon {
-        height: 22px;
-        position: absolute;
-        top: 288px;
-        z-index: 2;
-        left: 390px;
-    }
-    #mic {
-        height: 20px;
-        position: absolute;
-        top: 291px;
-        left: 810px;
-    }
-    #me {
-        height: 40px;
-    }
-    .button {
-        margin: 4px;
-        padding: 10px 18px;
-        border: 1px solid rgb(250, 247, 247);
-        border-radius: 3px;
-        color: rgb(77, 76, 76);
-    }
-    .button:hover {
-        border: 1px solid rgb(202, 202, 202);
-        border-radius: 3px;
-    }
-    #footer {
-        margin-left: -8px;
-        margin-right: -8px;
-        display: grid;
-        background-color: rgb(231, 229, 229);
-        grid-template-columns: 100px 80px auto 70px 70px 80px;
-    }
-    .left2 {
-        padding: 10px;
-        color: rgb(77, 76, 76);
-        text-decoration: none;
-        justify-self: start;
-    }
-    .right2 {
-        padding: 10px;
-        color: rgb(77, 76, 76);
-        text-decoration: none;
-    }
-    .left2:hover {
-        text-decoration: underline;
-    }
-    .right2:hover {
-        text-decoration: underline;
-    }
-</style>
 <body>
     <header>
-        <div id="navbar">
-            <a class="left1" href="#">About</a>
-            <a class="left1" href="#">Store</a>
-            <a class="right1 text1" href="#">Gmail</a>
-            <a class="right1 text1" href="#">Images</a>
-            <a class="right1 pic1" href="#"><img id="app" src="apps.png"></a>
-            <a class="right1" href="#"><img id="me" src="me.png"></a>
+        <div class="navbar">
+            <a class="nav-left nav-text" href="#">About</a>
+            <a class="nav-left nav-text" href="#">Store</a>
+            <a class="nav-right nav-text" href="#">Gmail</a>
+            <a class="nav-right nav-text" href="#">Images</a>
+            <a class="nav-right" href="#"><img src="./images/apps.png"></a>
+            <a class="nav-right" href="#"><img class="me" src="./images/me.png"></a>
         </div>
     </header>
-    <div id="main">
-        <img id="logo" src="logo.png" alt="Google Logo">
-        <form id="form"> 
-            <img id="search-icon" src="search.png"><input type="text" id="search" name="search"><img id="mic" src="mic.png">
+    <div class="content">
+        <img class="logo" src="./images/logo.png" alt="Google Logo">
+        <form class="form"> 
+            <img class="search-icon" src="./images/search.png"><input type="text" class="search" name="search"><img class="mic" src="./images/mic.png">
         </form>
     </div>
-    <div id="main-buttons">      
+    <div class="form-buttons">      
         <button class="button" type="button">Google Search</button>
         <button class="button" type="button">I'm Feeling Lucky</button>
     </div>
     <footer>
-        <div id="footer">
-            <a class="left2" href="#">Advertising</a>
-            <a class="left2" href="#">Business</a>
-            <a class="left2" href="#">How Search works</a>
-            <a class="right2" href="#">Privacy</a>
-            <a class="right2" href="#">Terms</a>
-            <a class="right2" href="#">Settings</a>
+        <div class="footer">
+            <a class="footer-left footer-text" href="#">Advertising</a>
+            <a class="footer-left footer-text" href="#">Business</a>
+            <a class="footer-left footer-text" href="#">How Search works</a>
+            <a class="footer-right footer-text" href="#">Privacy</a>
+            <a class="footer-right footer-text" href="#">Terms</a>
+            <a class="footer-right footer-text" href="#">Settings</a>
         </div>
     </footer>
 </body>    
