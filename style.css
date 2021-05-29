@@ -1,6 +1,8 @@
 <style>
-:root {
+body {
     -webkit-appearance: none;
+    width: 100%;
+    height: 100%;
 }
 html {
     height: 100%;
@@ -48,9 +50,9 @@ html {
 .search-icon {
     height: 22px;
     position: absolute;
-    top: 288px;
+    top: 38%;
     z-index: 2;
-    left: 390px;
+    left: 32%;
 }
 .search {
     position: relative;
@@ -70,15 +72,14 @@ html {
 .mic {
     height: 20px;
     position: absolute;
-    top: 291px;
-    left: 810px;
+    top: 38.3%;
+    left: 67%;
 }
 .form-buttons {
     display: block;
     margin: auto;
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 330px;
 }
 .button {
     margin: 4px;
@@ -86,17 +87,19 @@ html {
     border: 1px solid rgb(250, 247, 247);
     border-radius: 3px;
     color: rgb(77, 76, 76);
+    margin-bottom: 26%;
 }
 .button:hover {
     border: 1px solid rgb(202, 202, 202);
     border-radius: 3px;
 }
 .footer {
-    margin-left: -8px;
-    margin-right: -8px;
     display: grid;
     background-color: rgb(231, 229, 229);
     grid-template-columns: 100px 80px auto 70px 70px 80px;
+    margin: 0 -8px;
+    padding: 10px;
+    text-align: center;
 }
 .footer-left {
     padding: 10px;
