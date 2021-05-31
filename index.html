@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Google</title>
-</head>
-<body>
-    <header>
-        <div class="navbar">
-            <a class="nav-left nav-text" href="#">About</a>
-            <a class="nav-left nav-text" href="#">Store</a>
-            <a class="nav-right nav-text" href="#">Gmail</a>
-            <a class="nav-right nav-text" href="#">Images</a>
-            <a class="nav-right" href="#"><img src="./Images/apps.png"></a>
-            <a class="nav-right" href="#"><img class="me" src="./Images/me.png"></a>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Google</title>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <ul class="nav-bar">
+                    <li class="nav-btn nav-1"><a href="#">About</a></li>
+                    <li class="nav-btn nav-2"class="nav-btn"><a href="#">Store</a></li>
+                    <li class="nav-btn nav-3"><a href="#">Gmail</a></li>
+                    <li class="nav-btn nav-4"><a href="#">Images</a></li>
+                    <li class="nav-btn nav-5"><a href="#"><img src="./images/apps.png" alt="applications"></a></li>
+                    <li class="nav-btn nav-6"><a href="#"><img class="profile-picture" src="./images/me.png" alt="profile picture"></a></li>
+                </ul>
+            </div>
+        </nav>    
+        <div class="content">
+            <img class="logo" src="./images/logo.png">
+            <form>
+                <img class="search-icon" src="./images/search.png" alt="Google Search Icon">
+                <input class="search-bar" type="text" name="search-bar">
+                <img class="mic-icon" src="./images/mic.png" alt="Google Voice Icon">
+            </form>
+            <a class="content-btn" href="#">Google Search</a>
+            <a class="content-btn" href="#">I'm Feeling Lucky</a>             
         </div>
-    </header>
-    <div class="content">
-        <img class="logo" src="./Images/logo.png" alt="Google Logo">
-        <form class="form"> 
-            <img class="search-icon" src="./Images/search.png"><input type="text" class="search" name="search"><img class="mic" src="./Images/mic.png">
-        </form>
-    </div>
-    <div class="form-buttons">      
-        <button class="button" type="button">Google Search</button>
-        <button class="button" type="button">I'm Feeling Lucky</button>
-    </div>
-    <footer>
-        <div class="footer">
-            <a class="footer-left footer-text" href="#">Advertising</a>
-            <a class="footer-left footer-text" href="#">Business</a>
-            <a class="footer-left footer-text" href="#">How Search works</a>
-            <a class="footer-right footer-text" href="#">Privacy</a>
-            <a class="footer-right footer-text" href="#">Terms</a>
-            <a class="footer-right footer-text" href="#">Settings</a>
-        </div>
-    </footer>
-</body>    
+        <footer>
+            <div class="footer">
+                <ul class="footer-bar">
+                    <li class="footer-btn footer-1"><a href="#">Advertising</a></li> 
+                    <li class="footer-btn footer-2"><a href="#">Business</a></li>
+                    <li class="footer-btn footer-3"><a href="#">How Search works</a></li>
+                    <li class="footer-btn footer-4"><a href="#">Privacy</a></li>
+                    <li class="footer-btn footer-5"><a href="#">Terms</a></li>
+                    <li class="footer-btn footer-6"><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
