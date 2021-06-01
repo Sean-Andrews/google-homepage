@@ -168,16 +168,16 @@ Search Bar
 .search-icon {
     height: 2.2vh;
     position: absolute;
-    top: 36.5%;
-    left: 10%;
+    top: 36.5vh;
+    left: 10vw;
     z-index: 2;
 }
 .mic-icon {
     height: 2.2vh;
     position: absolute;
     z-index: 2;
-    top: 36.5%;
-    right: 10%;
+    top: 36.5vh;
+    right: 10vw;
 }
 
 /*
