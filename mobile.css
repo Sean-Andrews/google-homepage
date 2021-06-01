@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=========================================
+Body
+=========================================
+*/
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+}
+
+/*
+==========================================
+Nav Bar
+==========================================
+*/
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 6vh;
+    align-items: center;
+    justify-items: start;
+}
+.nav-btn {
+    display: inline-block;
+    align-items: center;
+    font-size: 14px;
+    justify-self: center;;
+   }
+.nav-btn:hover {
+    text-decoration: underline;
+}
+.nav-1 {
+    margin: 2vw;
+}
+.nav-2 {
+    margin: 1.3vw;
+}
+.nav-3 {
+    margin: 2vw;
+}
+.nav-4 {
+    margin-left: 1.5vw;
+}
+.nav-5 {
+    margin-left: 2vw;
+}
+.nav-6 {
+    margin-left: .8vw;
+}
+.profile-picture {
+    height: 5vh;
+    border-radius: 50%;
+}
+
+/*
+==========================================
+Main Content Container
+==========================================
+*/
+
+.content {
+    display: block;
+    margin-top: 15vh;
+    text-align: center;
+}
+/*
+==========================================
+Logo
+==========================================
+*/
+
+.logo {
+    display: block;
+    height: 14vh;
+    margin: auto;
+}
+
+/*
+==========================================
+Search Bar
+==========================================
+*/
+
+.search-bar {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    margin: 5px auto;
+    width: 85vw; 
+    height: 4vh;
+    border-radius: 50px;
+    border: 1px solid rgb(216, 215, 215);
+    padding-left: 4vw;
+}
+.search-bar:hover,
+.search-bar:focus {
+    box-shadow: 0 0 5px rgb(189, 189, 189);
+    outline: none;
+}
+.content-btn {
+    display: inline-block;
+    box-sizing: border-box;
+    color: rgb(78, 78, 78);
+    font-size: 15px;
+    background-color: rgb(243, 242, 242);
+    padding: 10px 18px;
+    margin: 30px 6px;
+}    
+.content-btn:hover {
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+}
+.search-icon {
+    height: 2.2vh;
+    position: absolute;
+    top: 36.5%;
+    left: 10%;
+    z-index: 2;
+}
+.mic-icon {
+    height: 2.2vh;
+    position: absolute;
+    z-index: 2;
+    top: 36.5%;
+    right: 10%;
+}
+
+/*
+======================================
+Footer
+======================================
+*/
+
+.footer {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(243, 242, 242);
+    align-items: center;
+    font-size: 14px;
+}
+.footer-btn {
+    color: rgb(78, 78, 78);
+    padding: 15px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.footer-btn:first-child {
+    margin-left: 1vw;
+}
+.footer-btn:hover {
+    text-decoration: underline;
+}
